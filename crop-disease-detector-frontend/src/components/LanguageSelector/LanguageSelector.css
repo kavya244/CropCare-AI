@@ -1,0 +1,44 @@
+
+.language-buttons {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  background: #edf5ee;
+  border: 1px solid #d5e6d8;
+  border-radius: 30px;
+}
+
+.language-buttons button {
+  padding: 9px 17px;
+  border: none;
+  border-radius: 25px;
+  background: transparent;
+  color: #315b3e;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.language-buttons button:hover {
+  background: #dcecdf;
+}
+
+.language-buttons button.active-language {
+  background: #287b46;
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(25, 75, 40, 0.18);
+}
+
+.language-buttons button:focus-visible {
+  outline: 2px solid #174d2d;
+  outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  .language-buttons button {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}

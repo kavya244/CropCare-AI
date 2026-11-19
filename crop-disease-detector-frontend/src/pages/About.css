@@ -1,0 +1,136 @@
+
+.about-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 24px;
+}
+
+.about-page .page-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.about-page .page-heading span {
+  color: #39834b;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.about-page .page-heading h1 {
+  color: #174b2b;
+  font-size: 38px;
+  margin: 12px 0;
+}
+
+.about-page .page-heading p {
+  color: #68786c;
+  font-size: 16px;
+}
+
+.about-banner {
+  background: linear-gradient(135deg, #e6f3e5, #f4f9f1);
+  border: 1px solid #dcebdd;
+  border-radius: 20px;
+  padding: 45px 30px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.about-banner svg {
+  color: #39834b;
+}
+
+.about-banner h2 {
+  color: #174b2b;
+  font-size: 28px;
+  margin: 18px 0 12px;
+}
+
+.about-banner p {
+  max-width: 750px;
+  margin: 0 auto;
+  color: #5e7162;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.about-card {
+  background: white;
+  padding: 28px 23px;
+  border: 1px solid #e0e9e1;
+  border-radius: 15px;
+  box-shadow: 0 5px 18px rgba(30, 70, 40, 0.06);
+  transition: 0.2s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(30, 70, 40, 0.1);
+}
+
+.about-card svg {
+  color: #39834b;
+}
+
+.about-card h3 {
+  color: #214d2d;
+  font-size: 20px;
+  margin: 16px 0 10px;
+}
+
+.about-card p {
+  color: #68786c;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.disclaimer-box {
+  margin-top: 30px;
+  padding: 20px 23px;
+  background: #fff8e9;
+  border: 1px solid #f0dfb9;
+  border-left: 4px solid #d69a32;
+  border-radius: 10px;
+  color: #6c5936;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.disclaimer-box strong {
+  color: #805b1c;
+}
+
+@media (max-width: 800px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    padding: 35px 16px;
+  }
+
+  .about-page .page-heading h1 {
+    font-size: 30px;
+  }
+
+  .about-banner {
+    padding: 32px 20px;
+  }
+
+  .about-banner h2 {
+    font-size: 23px;
+  }
+}

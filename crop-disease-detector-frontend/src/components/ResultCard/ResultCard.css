@@ -1,0 +1,151 @@
+
+.result-card {
+  width: 100%;
+  padding: 26px;
+  margin-top: 24px;
+  background: #ffffff;
+  border: 1px solid #e0ebe2;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(30, 70, 40, 0.07);
+  box-sizing: border-box;
+}
+
+.result-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.result-heading h2 {
+  margin: 0;
+  color: #214b30;
+  font-size: 21px;
+}
+
+.result-success-icon {
+  color: #218b50;
+  flex-shrink: 0;
+}
+
+.result-demo-icon {
+  color: #d18b19;
+  flex-shrink: 0;
+}
+
+.demo-label {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: #fff3d8;
+  color: #94600c;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.result-disease {
+  margin: 0 0 18px;
+  color: #183f29;
+  font-size: 25px;
+  overflow-wrap: anywhere;
+}
+
+.confidence-section {
+  margin: 18px 0;
+}
+
+.confidence-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 9px;
+  color: #53695a;
+  font-size: 14px;
+}
+
+.confidence-heading strong {
+  color: #237442;
+}
+
+.confidence-track {
+  width: 100%;
+  height: 9px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #e6eee7;
+}
+
+.confidence-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: #2d9854;
+  transition: width 0.4s ease;
+}
+
+.result-message {
+  padding: 14px;
+  border-radius: 10px;
+  background: #f2f8f2;
+  color: #405b47;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.result-card h4 {
+  margin: 22px 0 13px;
+  color: #244b31;
+  font-size: 16px;
+}
+
+.recommendation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.recommendation-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #465b4b;
+  line-height: 1.6;
+}
+
+.recommendation-list li svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: #27834b;
+}
+
+.disclaimer {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin: 24px 0 0;
+  padding: 13px;
+  border: 1px solid #f0dfb7;
+  border-radius: 9px;
+  background: #fffaf0;
+  color: #785d2c;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.disclaimer svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+@media (max-width: 600px) {
+  .result-card {
+    padding: 19px;
+  }
+
+  .result-disease {
+    font-size: 21px;
+  }
+}
